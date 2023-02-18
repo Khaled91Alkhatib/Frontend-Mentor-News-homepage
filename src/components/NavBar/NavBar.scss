@@ -3,9 +3,25 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2em;
+
+  div {
+
+    .logo {
+      transform: scale(0.7);
+    }
+
+  }
+
 }
 
 .Buttons {
   border: none;
   background-color: white;
+  color: hsl(236, 13%, 42%); // Dark greyish blue
+
+  &:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
 }
