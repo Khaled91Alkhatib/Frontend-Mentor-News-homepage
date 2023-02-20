@@ -1,10 +1,13 @@
 .image {
   width: 85%;
+  margin-right: 0;
+  padding-right: 0;
   margin-bottom: 1em;
 }
 
 .upper-half {
   display: flex;
+  flex-direction: column;
 }
 
 .info-under-pic {
@@ -61,5 +64,18 @@
     font-size: 10px;
     color: hsl(233, 8%, 79%);
     border-bottom: solid 0.5px hsl(233, 8%, 79%);
+  }
+}
+
+.lower-titles {
+  display: flex;
+
+  .image-to-text {
+    display: flex;
+  }
+
+  .lower-image {
+    height: 100px;
+    margin-right: 1em;
   }
 }
