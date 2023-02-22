@@ -2,6 +2,8 @@
   margin: 0;
   font-family: "Inter", sans-serif;
   background-color: hsl(36, 100%, 99%);
+  letter-spacing: 0.05em;
+  box-sizing: border-box;
 }
 
 .full-page {
@@ -10,7 +12,8 @@
   margin: auto;
   margin-top: 3em;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     max-width: 90vw;
+    margin-top: 1em;
   }
 }
