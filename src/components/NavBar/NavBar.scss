@@ -15,13 +15,74 @@
 
 }
 
-.Buttons {
+.buttons,
+.last-buttons {
   border: none;
   background-color: white;
   color: hsl(236, 13%, 42%); // Dark greyish blue
+  padding-right: 1.5em;
+
+  &.last-buttons {
+    padding-right: 0;
+  }
 
   &:hover {
     cursor: pointer;
     color: hsl(5, 85%, 63%);
   }
+}
+
+.menu-icon {
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 1rem;
+  width: 80%;
+  height: 100vh;
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu-buttons {
+  border: none;
+  margin: 1em;
+  text-align: left;
+  color: hsl(236, 13%, 42%);
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
+
+}
+
+
+.nav-names {
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
 }
