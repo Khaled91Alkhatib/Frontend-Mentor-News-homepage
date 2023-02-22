@@ -2,18 +2,21 @@ import React from 'react';
 
 import './Homepage.scss';
 import desktopImage from '../../Assets/images/image-web-3-desktop.jpg';
+import mobileImage from '../../Assets/images/image-web-3-mobile.jpg';
 import image1 from '../../Assets/images/image-retro-pcs.jpg';
 import image2 from '../../Assets/images/image-top-laptops.jpg';
 import image3 from '../../Assets/images/image-gaming-growth.jpg';
 
 const Homepage = () => {
+
   return (
     <div className='upper-half'>
 
-      <div style={{ display: 'flex' }}>
+      <div className='image-column'>
         <div>
           <div>
-            <img className='image' src={desktopImage} alt='desktop' />
+            <img className='desktop-image' src={desktopImage} alt='desktop' />
+            <img className='mobile-image' src={mobileImage} alt='mobile' />
           </div>
 
           <div>
@@ -24,7 +27,7 @@ const Homepage = () => {
                   We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
                   But is it really fulfilling its promise?
                 </div>
-                <button>READ MORE</button>
+                <button className='read-more-button'>READ MORE</button>
               </div>
             </div>
           </div>
@@ -32,7 +35,7 @@ const Homepage = () => {
 
         <div className='new-data'>
           <div className='new-container'>
-            <h2 className='test'>New</h2>
+            <h2>New</h2>
 
             <h3>Hydrogen VS Electric Cars</h3>
             <div>Will hydrogen-fueled cars ever catch up to EVs?</div>
@@ -44,8 +47,7 @@ const Homepage = () => {
             <div>Private funding by VC firms is down 50% YOY. We take a look at what that means.</div>
           </div>
         </div>
-        <div>
-        </div>
+
       </div>
 
       <div className='lower-titles'>
@@ -53,10 +55,10 @@ const Homepage = () => {
         <div className='image-to-text'>
           <img className='lower-image' src={image1} alt='first' />
           <div>
-            <h3>01</h3>
+            <h2 style={{ color: 'hsl(233, 8%, 79%)', marginBottom: '7px' }}>01</h2>
             <div>
-              Reviving Retro PCs
-              What happens when old PCs are given modern upgrades?
+              <div style={{ marginBottom: '7px' }}><strong>Reviving Retro PCs</strong></div>
+              <div style={{ color: 'hsl(236, 13%, 42%)', fontSize: '13px' }}>What happens when old PCs are given modern upgrades?</div>
             </div>
           </div>
         </div>
@@ -64,10 +66,10 @@ const Homepage = () => {
         <div className='image-to-text'>
           <img className='lower-image' src={image2} alt='second' />
           <div>
-            <h3>02</h3>
+            <h2 style={{ color: 'hsl(233, 8%, 79%)', marginBottom: '7px' }}>02</h2>
             <div>
-              Top 10 Laptops of 2022
-              Our best picks for various needs and budgets.
+              <div style={{ marginBottom: '7px' }}><strong>Top 10 Laptops of 2022</strong></div>
+              <div style={{ color: 'hsl(236, 13%, 42%)', fontSize: '13px' }}>Our best picks for various needs and budgets.</div>
             </div>
           </div>
         </div>
@@ -75,10 +77,10 @@ const Homepage = () => {
         <div className='image-to-text'>
           <img className='lower-image' src={image3} alt='third' />
           <div>
-            <h3>03</h3>
+            <h2 style={{ color: 'hsl(233, 8%, 79%)', marginBottom: '7px' }}>03</h2>
             <div>
-              The Growth of Gaming
-              How the pandemic has sparked fresh opportunities.
+              <div style={{ marginBottom: '7px' }}><strong>The Growth of Gaming</strong></div>
+              <div style={{ color: 'hsl(236, 13%, 42%)', fontSize: '13px' }}>How the pandemic has sparked fresh opportunities.</div>
             </div>
           </div>
         </div>
@@ -89,15 +91,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
-// 01
-//   Reviving Retro PCs
-//   What happens when old PCs are given modern upgrades?
-
-//   02
-//   Top 10 Laptops of 2022
-//   Our best picks for various needs and budgets.
-
-//   03
-//   The Growth of Gaming
-//   How the pandemic has sparked fresh opportunities.
