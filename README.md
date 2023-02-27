@@ -5,7 +5,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 ## Table of contents
 
   - [The challenge](#the-challenge)
-  - [Screenshots](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
   - [Built with](#built-with)
 
